@@ -8,13 +8,13 @@ export default function Shop() {
     let product_images = [necklace, shirt];
 
     return (
-        <div id='shop' className='space-y-4'>
+        <div id='shop' className='space-y-4 w-[350px] ml-auto mr-auto'>
             <div className="flex justify-center">
                 <h1 className="text-4xl text-white">Merch</h1>
             </div>
             {items.map((items, index) => (
                 <div key={index} className='border-1 rounded-lg mr-2 ml-2'>
-                    <div className='relative w-100% h-[250px] rounded-t-lg border-1 bg-black'>
+                    <div className='relative h-[250px] rounded-t-lg border-1 bg-black'>
                         <Image fill src={product_images[index]} alt={"Product"} />
                     </div>
                     <div className='pr-2 pl-2'>

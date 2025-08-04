@@ -1,7 +1,10 @@
 export default function Footer(){
     return (
-        <div className="mt-20">    
-            <ul className="flex space-x-4 ml-4">
+        <div className="ml-4 mt-20 text-white space-y-4">
+			<h2 className="text-2xl text-center">Join Us!</h2>
+			<h5>Join the Movement. This isn't just music—it's a message. Independent, unfiltered, and made for those who still believe in truth through sound. Sign up for exclusive tracks, behind-the-scenes stories, and early access to releases.</h5>
+			<h6>Listen & Follow:</h6>
+            <ul className="flex space-x-4">
 				<li>
 				    <a href="https://www.facebook.com/savageofthesouth/" title="Facebook">
 					    <svg aria-hidden="true" focusable="false" role="presentation" className="h-8 w-8" viewBox="0 0 18 18">

@@ -16,9 +16,9 @@ export default function Events(){
             </div>
             <div className='grid grid-flow-col auto-cols-max gap-4 overflow-x-auto'>
                 {events.map((event, index) => (
-                    <div key={index} className='w-screen'>
+                    <div key={index} className='w-[300px]'>
                         <div>
-                            <div className='w-100% h-[300px] relative'>
+                            <div className='h-[300px] relative'>
                                 <Image fill src={map[event.image_url]} alt='Promotional Advertisement'/>
                             </div>
                             <div className='border-1 border-gray-400'>
