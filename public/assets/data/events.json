@@ -1,0 +1,21 @@
+[
+  {
+    "date": "2025-03-07",
+    "city": "Los Angeles, CA",
+    "venue": "Crypto.com Arena",
+    "country": "USA",
+    "ticket_url": "https://tickets.themindtour.com/LA",
+    "notes": "Opening Night",
+    "image_url": "Darkoh_Live"
+  },
+  {
+    "date": "2025-03-09",
+    "city": "San Francisco, CA",
+    "venue": "Chase Center",
+    "country": "USA",
+    "ticket_url": "",
+    "notes": "Fans welcome for meet and greet.",
+    "image_url": "Iron_Verse"
+  }
+]
+

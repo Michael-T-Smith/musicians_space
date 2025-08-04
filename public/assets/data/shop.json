@@ -1,0 +1,16 @@
+[
+    {
+        "name": "DD Silver Necklace",
+        "description": "Sterling Silver Necklace made of .999 Sterline Silver",
+        "price": 24.99,
+        "image": "DD_Necklace",
+        "id": "dd-necklace"
+    },
+    {
+        "name": "DD Shirt",
+        "description": "Danni Darkoh Apparel",
+        "price": 13.99,
+        "image": "DD_Black_Shirt",
+        "id": "dd-black-shirt"
+    }
+]
