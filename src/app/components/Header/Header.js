@@ -16,7 +16,7 @@ export default function Header(){
     }, [openNav]);
 
     return (
-        <div className="bg-red-900 h-[65px]">
+        <div className="bg-red-900 h-[65px] border-b-1 border-white border-dotted mb-2">
             <div className="flex p-3">
                 <div className="w-1/3">
                     <div className="md:hidden flex" >
@@ -35,13 +35,13 @@ export default function Header(){
                             </ul>
                         </div>
                     </div>    
-                    <div className="xs:hidden md:block">
-                        <ul className="flex space-x-4">
-                            <li>Shop</li>
-                            <li>Music</li>
-                            <li>Videos</li>
-                            <li>Events</li>
-                            <li>Join Email List</li>
+                    <div className="xs:hidden md:block mt-2">
+                        <ul className="flex space-x-4 text-sm text-white">
+                            <li><a href="#shop">Shop</a></li>
+                            <li><a href="#music">Music</a></li>
+                            <li><a href="#videos">Videos</a></li>
+                            <li><a href="#events">Events</a></li>
+                            <li className='text-nowrap'><a href="#email">Join Email List</a></li>
                         </ul>
                     </div>
                 </div>

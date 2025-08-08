@@ -8,27 +8,31 @@ export default function Shop() {
     let product_images = [necklace, shirt];
 
     return (
-        <div id='shop' className='space-y-4 w-[350px] ml-auto mr-auto'>
+        <div id='shop' className='space-y-4 ml-auto mr-auto'>
             <div className="flex justify-center">
                 <h1 className="text-4xl text-white">Merch</h1>
             </div>
-            {items.map((items, index) => (
-                <div key={index} className='border-1 rounded-lg mr-2 ml-2'>
-                    <div className='relative h-[250px] rounded-t-lg border-1 bg-black'>
-                        <Image fill src={product_images[index]} alt={"Product"} />
-                    </div>
-                    <div className='pr-2 pl-2'>
-                        <p className='text-xl text-white'>{items.name}</p>
-                        <p className='text-sm text-white'>{items.description}</p>
-                        <p className='text-md text-white'>${items.price}</p>
-                    </div>
-                    <div className='flex justify-start'>
-                        <div className="border-1 bg-orange-400 border-yellow-600 p-3">
-                            <button className='text-white'>Buy Now</button>
+            <div className='flex justify-center'>
+                <div className="grid grid-cols-1 gap-4 md:grid-rows-1 md:grid-flow-col">
+                    {items.map((items, index) => (
+                        <div key={index} className='w-[250px] border-1 rounded-lg mr-2 ml-2'>
+                            <div className='relative h-[250px] rounded-t-lg border-1 bg-black'>
+                                <Image fill src={product_images[index]} alt={"Product"} />
+                            </div>
+                            <div className='pr-2 pl-2'>
+                                <p className='text-xl text-white'>{items.name}</p>
+                                <p className='text-sm text-white h-14'>{items.description}</p>
+                                <p className='text-md text-white'>${items.price}</p>
+                            </div>
+                            <div className='flex justify-start'>
+                                <div className="border-1 bg-orange-400 border-yellow-600 p-3">
+                                    <button className='text-white'>Buy Now</button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    ))}
                 </div>
-            ))}
+            </div>
         </div>
     )
 }

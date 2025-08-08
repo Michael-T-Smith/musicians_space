@@ -1,6 +1,6 @@
 export default function Footer(){
     return (
-        <div className="ml-4 mt-20 text-white space-y-4">
+        <div className="pl-4 pr-4 mt-20 text-white space-y-4 md:pl-8 md:pr-8 lg:pr-12 lg:pl-12">
 			<h2 className="text-2xl text-center">Join Us!</h2>
 			<h5>Join the Movement. This isn't just music—it's a message. Independent, unfiltered, and made for those who still believe in truth through sound. Sign up for exclusive tracks, behind-the-scenes stories, and early access to releases.</h5>
 			<h6>Listen & Follow:</h6>

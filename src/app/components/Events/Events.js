@@ -2,11 +2,13 @@ import Image from 'next/image'
 import events from '../../../../public/assets/data/events.json'
 import image1 from '../../../../public/assets/images/Events/2025/Darkoh_Live.jpeg'
 import image2 from '../../../../public/assets/images/Events/2025/Iron_Verse.jpeg'
+import image3 from '../../../../public/assets/images/Events/2025/Darkoh_Skull_Live.jpeg'
 
 export default function Events(){
     let map = {
         "Darkoh_Live": image1,
         "Iron_Verse": image2,
+        "Detroit_Venue": image3,
     }
 
     return(
@@ -16,9 +18,9 @@ export default function Events(){
             </div>
             <div className='grid grid-flow-col auto-cols-max gap-4 overflow-x-auto'>
                 {events.map((event, index) => (
-                    <div key={index} className='w-[300px]'>
+                    <div key={index} >
                         <div>
-                            <div className='h-[300px] relative'>
+                            <div className='relative w-[250px] h-[250px] md:h-[400px] md:w-[400px] lg:h-[550px] lg:w-[550px]'>
                                 <Image fill src={map[event.image_url]} alt='Promotional Advertisement'/>
                             </div>
                             <div className='border-1 border-gray-400'>

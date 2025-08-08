@@ -18,9 +18,9 @@ export default function Hero() {
     }, [])
 
     return (
-        <div className='bg-gray-700'>
-            <div>
-                <Image style={{objectFit: "contain" }} src={images[index]} alt="Promotional Image" />                
+        <div className='bg-red-900'>
+            <div className='flex justify-center w-screen'>
+                <Image priority style={{objectFit: "contain"}} src={images[index]} alt="Promotional Image" />                
             </div>
             <div className='bg-red-900 pt-2 pb-2 flex justify-center space-x-2'>
                 {images.map((item, i) => <div key={i} className={`${i === index ? "activeCircle" : "circle"}`} ></div>)}
