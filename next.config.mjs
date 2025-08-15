@@ -2,13 +2,12 @@
 const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
-    basePath: "/musicians_space",
+    
+    assetPrefix: isProd ? '/musicians_space/' : '',
+    basePath: isProd ? '/musicians_space' : '',
     output: "export", 
-    reactStrictMode: true,
-    assetPrefix: isProd ? '/<repo-name>/' : '',
-    images: {
-        unoptimized: true
-    }
+    reactStrictmode: true,
+    images: { unoptimized: true }
 };
 
 export default nextConfig;

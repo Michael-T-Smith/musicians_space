@@ -1,14 +1,16 @@
 import Image from 'next/image'
 import events from '../../../../public/assets/data/events.json'
+import image1 from '../../../../public/assets/images/Events/2025/Darkoh_Live.jpeg'
+import image2 from '../../../../public/assets/images/Events/2025/Iron_Verse.jpeg'
+import image3 from '../../../../public/assets/images/Events/2025/Darkoh_Skull_Live.jpeg'
 
 export default function Events(){
-    const prefix = process.env.NODE_ENV === 'production' ? '/<musicians_space>' : '';
-
     let map = {
-        "Darkoh_Live": `${prefix}/assets/images/Events/2025/Darkoh_Live.jpeg`,
-        "Iron_Verse": `${prefix}/assets/images/Events/2025/Iron_Verse.jpeg`,
-        "Detroit_Venue": `${prefix}/assets/images/Events/2025/Darkoh_Skull_Live.jpeg`,
-    };
+        "Darkoh_Live": image1,
+        "Iron_Verse": image2,
+        "Detroit_Venue": image3,
+    }
+
     return(
         <div id="events" className="m-2 pr-2 pl-2">
             <div className="flex justify-center">
