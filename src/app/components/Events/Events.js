@@ -20,7 +20,7 @@ export default function Events(){
                 {events.map((event, index) => (
                     <div key={index} >
                         <div>
-                            <div className='relative w-[250px] h-[250px] md:h-[400px] md:w-[400px] lg:h-[550px] lg:w-[550px]'>
+                            <div className='relative w-[250px] h-[250px] md:h-[400px] md:w-[400px] lg:h-[550px] lg:w-[600px]'>
                                 <Image fill src={map[event.image_url]} alt='Promotional Advertisement'/>
                             </div>
                             <div className='border-1 border-gray-400'>
