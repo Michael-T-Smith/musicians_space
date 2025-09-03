@@ -20,7 +20,7 @@ export default function Events(){
                 {events.map((event, index) => (
                     <div key={index} >
                         <div>
-                            <div className='relative w-[250px] h-[250px] md:h-[400px] md:w-[400px] lg:h-[550px] lg:w-[600px]'>
+                            <div className='relative w-[250px] h-[250px] md:h-[400px] md:w-[400px]'>
                                 <Image fill src={map[event.image_url]} alt='Promotional Advertisement'/>
                             </div>
                             <div className='border-1 border-gray-400'>
@@ -31,7 +31,9 @@ export default function Events(){
                                     <p>{event.country}</p>
                                 </div>
                                 <p className='text-gray-400 text-sm'>{event.notes}</p>
-                                <a href={event.ticket_url}><p className='text-blue-400'>{event.ticket_url ? "Tickets Available Here!" : "Sold Out"}</p></a>
+                                <button id="ticket-button">
+                                    <p><a href={event.ticket_url ? event.ticket_url : ''}>{event.ticket_url ? "Tickets Available Here!" : "Sold Out..."}</a></p>
+                                </button>
                             </div>
                         </div>
                     </div>

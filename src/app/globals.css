@@ -4,3 +4,19 @@
 @theme {
   --breakpoint-xs: 250px;
 }
+
+#ticket-button {
+  border: 1px solid green;
+  font-size: 1rem;
+  font-weight: 800;
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+  background-color: rgb(255, 255, 0);
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#ticket-button:hover {
+  cursor: pointer;
+}
